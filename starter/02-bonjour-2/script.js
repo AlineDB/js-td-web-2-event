@@ -12,6 +12,21 @@
 */
 
 
+const sPrenom = document.getElementById("prenom").value;
+
+function sHello(){
+    if (sPrenom ===""){
+        alert(`Bonjour $sPrenom`);
+    } else {
+        alert('Bonjour toi ! tu ne veux pas me dire comment tu t\'appelles ?');
+    }
+};
+
+document.getElementById("hello").addEventListener("click", sHello);
+
+
+
+
 // Autre écriture
 
 

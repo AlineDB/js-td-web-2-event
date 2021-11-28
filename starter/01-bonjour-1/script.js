@@ -41,6 +41,17 @@ MÉTHODE :
 2. récupérer l'élément "bouton" qui doit réagir
 3. ajouter à ce bouton un gestionnaire d'événement avec la méthode  addEventListener() qui va écouter le clic (événement click) et qui, au clic sur le bouton,  déclenchera l'appel de la fonction direbonjour.
 */
+(function (){
+    const Hello ={
+        ini(){
+            function direBonjour() {
+                alert("Hello");
+            }
+            document.getElementById("hello").addEventListener("click", direBonjour);
+        }
+    }
+    Hello.ini();
+})();
 
 
 
